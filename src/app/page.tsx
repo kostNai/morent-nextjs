@@ -1,7 +1,10 @@
 import MainCarCard from '@/components/mainCarCard/MainCarCard'
+import SetCarLocation from '@/components/setCarLocation/SetCarLocation'
 import { carsData } from '@/data/mainCars'
+import { TbArrowsDownUp } from 'react-icons/tb'
 
 const carsInfo = carsData
+
 export default function Home() {
     return (
         <div className='px-16'>
@@ -15,6 +18,13 @@ export default function Home() {
                         bgColor={car.bgColor}
                     />
                 ))}
+            </section>
+            <section className='flex items-center'>
+                <SetCarLocation title='Забрати:' bgDotColors='#3563E9' />
+                <button className='mx-11 w-fit h-fit p-[22px] bg-primary rounded-md shrink-0 cursor-pointer transition-opacity duration-300 hover:opacity-80'>
+                    <TbArrowsDownUp size={18} color='white' />
+                </button>
+                <SetCarLocation title='Залишити:' bgDotColors='#54A6FF' />
             </section>
         </div>
     )

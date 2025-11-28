@@ -14,8 +14,12 @@ export default function MainCarCard({
     imagePath,
     bgColor,
 }: Props) {
+    console.log(bgColor)
     return (
-        <article className={`flex-1 p-6 bg-${bgColor} rounded-xl`}>
+        <article
+            className='flex-1 p-6 rounded-xl'
+            style={{ background: bgColor }}
+        >
             <div className='max-w-[500px] text-white'>
                 <h2 className=' text-[32px] font-semibold'>{title}</h2>
                 <p className='mt-4 mb-5'>{desc}</p>
@@ -24,9 +28,7 @@ export default function MainCarCard({
                 <div>
                     <RentalBtn
                         title='Оренда автомобіля'
-                        bgColor={
-                            bgColor === 'primary' ? 'primary-light' : 'primary'
-                        }
+                        bgColor={bgColor === '#3563e9' ? '#54a6ff' : '#3563e9'}
                     />
                 </div>
             </div>

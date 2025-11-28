@@ -17,6 +17,8 @@
     --color-primary-light: #54a6ff;
     --color-secondary: #596780;
     --color-notifications: #ff4423;
+    --color-text-secondary: #1a202c;
+    --color-text-secondary-light: #90a3bf;
 }
 
 @media (prefers-color-scheme: dark) {

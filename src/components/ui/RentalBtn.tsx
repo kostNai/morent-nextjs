@@ -6,7 +6,8 @@ type Props = {
 export default function RentalBtn({ title, bgColor = 'primary' }: Props) {
     return (
         <button
-            className={`bg-${bgColor} text-white font-semibold px-5 py-2.5 rounded-sm cursor-pointer`}
+            className='text-white font-semibold px-5 py-2.5 rounded-sm cursor-pointer'
+            style={{ backgroundColor: bgColor }}
         >
             {title}
         </button>
