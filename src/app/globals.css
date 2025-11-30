@@ -19,6 +19,7 @@
     --color-notifications: #ff4423;
     --color-text-secondary: #1a202c;
     --color-text-secondary-light: #90a3bf;
+    --color-text-footer-secondary: #131313;
 }
 
 @media (prefers-color-scheme: dark) {

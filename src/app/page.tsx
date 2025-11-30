@@ -1,6 +1,7 @@
 import CarCard from '@/components/carCard/CarCard'
 import MainCarCard from '@/components/mainCarCard/MainCarCard'
 import SetCarLocation from '@/components/setCarLocation/SetCarLocation'
+import RentalBtn from '@/components/ui/RentalBtn'
 import { carsData } from '@/data/mainCars'
 import Link from 'next/link'
 import { TbArrowsDownUp } from 'react-icons/tb'
@@ -28,8 +29,8 @@ export default function Home() {
                 </button>
                 <SetCarLocation title='Залишити:' bgDotColors='#54A6FF' />
             </section>
-            <section>
-                <div className='pt-12 px-5 w-full flex justify-between'>
+            <section className='pb-[57px]'>
+                <div className='pt-12  px-5 w-full flex justify-between'>
                     <p className='text-text-secondary-light font-semibold'>
                         Популярні авто
                     </p>
@@ -118,6 +119,9 @@ export default function Home() {
                         price={100}
                         discount={20}
                     />
+                </div>
+                <div className='mt-[74px] w-full flex justify-center'>
+                    <RentalBtn title='Показати більше' />
                 </div>
             </section>
         </div>
