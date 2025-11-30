@@ -1,6 +1,8 @@
+import CarCard from '@/components/carCard/CarCard'
 import MainCarCard from '@/components/mainCarCard/MainCarCard'
 import SetCarLocation from '@/components/setCarLocation/SetCarLocation'
 import { carsData } from '@/data/mainCars'
+import Link from 'next/link'
 import { TbArrowsDownUp } from 'react-icons/tb'
 
 const carsInfo = carsData
@@ -25,6 +27,98 @@ export default function Home() {
                     <TbArrowsDownUp size={18} color='white' />
                 </button>
                 <SetCarLocation title='Залишити:' bgDotColors='#54A6FF' />
+            </section>
+            <section>
+                <div className='pt-12 px-5 w-full flex justify-between'>
+                    <p className='text-text-secondary-light font-semibold'>
+                        Популярні авто
+                    </p>
+                    <Link href='/' className='text-primary font-semibold'>
+                        Дивитися всі
+                    </Link>
+                </div>
+                <div className='mt-5 flex gap-8 flex-wrap'>
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                </div>
             </section>
         </div>
     )
