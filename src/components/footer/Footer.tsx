@@ -23,7 +23,7 @@ export default function Footer() {
                         <ul className='mt-6 flex flex-col gap-8'>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Як це працює
@@ -31,7 +31,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Особливості
@@ -39,7 +39,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Партнерство
@@ -47,7 +47,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Ділові відносини
@@ -60,7 +60,7 @@ export default function Footer() {
                         <ul className='mt-6 flex flex-col gap-8'>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Події
@@ -68,7 +68,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Блог
@@ -76,7 +76,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Подкаст
@@ -84,7 +84,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Запросити друга
@@ -97,7 +97,7 @@ export default function Footer() {
                         <ul className='mt-6 flex flex-col gap-8'>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Discord
@@ -105,7 +105,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Instagram
@@ -113,7 +113,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Twitter
@@ -121,7 +121,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    className='text-text-footer-secondary opacity-40'
+                                    className='text-text-footer-secondary opacity-40 transition-opacity duration-300 hover:opacity-80'
                                     href='/'
                                 >
                                     Facebook

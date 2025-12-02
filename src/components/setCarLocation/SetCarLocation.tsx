@@ -5,7 +5,7 @@ type Props = {
 
 export default function SetCarLocation({ title, bgDotColors }: Props) {
     return (
-        <article className='flex-1 flex py-6 px-12 flex-col gap-4 bg-white'>
+        <article className='flex-1 flex py-6 px-12 flex-col gap-4 bg-white rounded-md max-lg:w-full max-lg:px-4 '>
             <div className='flex items-center gap-2 '>
                 <div className='relative w-fit h-fit'>
                     <div
@@ -21,21 +21,25 @@ export default function SetCarLocation({ title, bgDotColors }: Props) {
             </div>
             <div>
                 <ul className='flex justify-between'>
-                    <li className='flex-1 flex flex-col items-center'>
-                        <div className='w-full'>
-                            <h4 className='font-bold'>Локація</h4>
+                    <li className='flex-1 flex flex-col items-center '>
+                        <div className='w-full max-lg:flex max-lg:flex-col  max-lg:items-center max-lg:justify-center'>
+                            <h4 className='font-bold max-sm:text-center'>
+                                Локація
+                            </h4>
                             <label
                                 htmlFor=''
                                 className='text-xs text-text-secondary-light mt-2'
                             >
-                                Оберіть ваше місто
+                                Оберіть місто
                                 <select name='' id=''></select>
                             </label>
                         </div>
                     </li>
-                    <li className='flex-1 shrink-0 flex flex-col  items-center border-x-2 border-x-solid border-x-gray-200'>
-                        <div>
-                            <h4 className='font-bold'>Дата</h4>
+                    <li className='flex-1 shrink-0 flex flex-col  items-center border-x-2 border-x-solid border-x-gray-200 '>
+                        <div className='max-lg:w-full max-lg:flex max-lg:flex-col  max-lg:items-center max-lg:justify-center'>
+                            <h4 className='font-bold max-sm:text-center'>
+                                Дата
+                            </h4>
                             <label
                                 htmlFor=''
                                 className='text-xs text-text-secondary-light mt-2'
@@ -46,11 +50,13 @@ export default function SetCarLocation({ title, bgDotColors }: Props) {
                         </div>
                     </li>
                     <li className='flex-1 flex flex-col items-end'>
-                        <div>
-                            <h4 className='font-bold'>Час</h4>
+                        <div className='max-lg:w-full max-lg:flex max-lg:flex-col  max-lg:items-center max-lg:justify-center'>
+                            <h4 className='font-bold max-sm:text-center'>
+                                Час
+                            </h4>
                             <label
                                 htmlFor=''
-                                className='text-xs text-text-secondary-light mt-2'
+                                className='text-xs text-text-secondary-light mt-2 '
                             >
                                 Оберіть час
                                 <select name='' id=''></select>

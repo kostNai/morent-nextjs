@@ -14,7 +14,6 @@ export default function MainCarCard({
     imagePath,
     bgColor,
 }: Props) {
-    console.log(bgColor)
     return (
         <article
             className='flex-1 p-6 rounded-xl'
