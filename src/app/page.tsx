@@ -37,7 +37,7 @@ export default function Home() {
                 </button>
                 <SetCarLocation title='Залишити:' bgDotColors='#54A6FF' />
             </section>
-            {/* <section className='pb-[57px]'>
+            <section className='pb-[57px]'>
                 <div className='pt-12  px-5 w-full flex justify-between'>
                     <p className='text-text-secondary-light font-semibold'>
                         Популярні авто
@@ -46,47 +46,54 @@ export default function Home() {
                         Дивитися всі
                     </Link>
                 </div>
+                <div className='mt-5 flex gap-8 flex-wrap max-sm:flex-nowrap max-sm:overflow-hidden'>
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                    <CarCard
+                        title='Nissan GT - R'
+                        type='Sport'
+                        img='/images/car.png'
+                        fuelCapacity={80}
+                        controlType='Ручне'
+                        capacity='2'
+                        price={100}
+                        discount={20}
+                    />
+                </div>
+                <div className='pt-12  pl-5'>
+                    <p className='text-text-secondary-light font-semibold'>
+                        Рекомендовані авто
+                    </p>
+                </div>
                 <div className='mt-5 flex gap-8 flex-wrap'>
-                    <CarCard
-                        title='Nissan GT - R'
-                        type='Sport'
-                        img='/images/car.png'
-                        fuelCapacity={80}
-                        controlType='Ручне'
-                        capacity='2'
-                        price={100}
-                        discount={20}
-                    />
-                    <CarCard
-                        title='Nissan GT - R'
-                        type='Sport'
-                        img='/images/car.png'
-                        fuelCapacity={80}
-                        controlType='Ручне'
-                        capacity='2'
-                        price={100}
-                        discount={20}
-                    />
-                    <CarCard
-                        title='Nissan GT - R'
-                        type='Sport'
-                        img='/images/car.png'
-                        fuelCapacity={80}
-                        controlType='Ручне'
-                        capacity='2'
-                        price={100}
-                        discount={20}
-                    />
-                    <CarCard
-                        title='Nissan GT - R'
-                        type='Sport'
-                        img='/images/car.png'
-                        fuelCapacity={80}
-                        controlType='Ручне'
-                        capacity='2'
-                        price={100}
-                        discount={20}
-                    />
                     <CarCard
                         title='Nissan GT - R'
                         type='Sport'
@@ -131,7 +138,7 @@ export default function Home() {
                 <div className='mt-[74px] w-full flex justify-center'>
                     <RentalBtn title='Показати більше' />
                 </div>
-            </section> */}
+            </section>
         </div>
     )
 }

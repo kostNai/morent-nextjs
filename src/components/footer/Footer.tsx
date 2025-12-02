@@ -3,21 +3,21 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className='px-15 pb-15 pt-20 bg-white'>
-            <div className='pb-9 border-b border-b-solid border-b-text-secondary-light/50 flex justify-between'>
-                <div className='max-w-[293px]'>
+        <footer className='px-15 pb-15 pt-20 bg-white max-lg:px-6'>
+            <div className='pb-9 border-b border-b-solid border-b-text-secondary-light/50 flex justify-between max-lg:flex-col max-lg:gap-12'>
+                <div className='max-w-[350px]'>
                     <Link
                         href='/'
                         className=' uppercase text-[32px] font-bold text-primary'
                     >
                         morent
                     </Link>
-                    <p className='text-text-footer-secondary opacity-40'>
+                    <p className='text-text-footer-secondary opacity-40 max-lg:mt-4'>
                         Наша мета – забезпечити зручність та сприяти збільшенню
                         вашого обсягу продажів.
                     </p>
                 </div>
-                <div className='flex gap-15 '>
+                <div className='flex gap-15 max-sm:flex-wrap'>
                     <div>
                         <h2 className='text-xl font-semibold'>Про нас</h2>
                         <ul className='mt-6 flex flex-col gap-8'>
@@ -131,11 +131,11 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='mt-9 flex justify-between items-center'>
-                <div className='text-text-secondary font-semibold'>
+            <div className='mt-9 flex justify-between items-center gap-6 max-sm:flex-col-reverse max-sm:items-start max-sm:gap-8'>
+                <div className='text-text-secondary font-semibold shrink-0 max-sm:text-xs'>
                     <p>&copy;MORENT. Усі права захищені</p>
                 </div>
-                <div className='flex gap-15'>
+                <div className=' flex gap-15 max-lg:justify-end max-sm:justify-between max-sm:text-xs max-lg:w-full'>
                     <Link
                         className='text-text-secondary font-semibold'
                         href='/'

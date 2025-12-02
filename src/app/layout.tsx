@@ -20,13 +20,13 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang='en' className='min-w-screen'>
+        <html lang='en' className=''>
             <body
-                className={`${jakarta.variable}  antialiased flex flex-col min-h-screen min-w-screen`}
+                className={`${jakarta.variable}  antialiased flex flex-col min-h-screen`}
             >
                 <Header />
-                <main className='flex-1 bg-background-main'>{children}</main>
-                {/* <Footer /> */}
+                <main className='flex-1 bg-background-main '>{children}</main>
+                <Footer />
             </body>
         </html>
     )
