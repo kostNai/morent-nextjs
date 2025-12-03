@@ -1,10 +1,9 @@
 import CarCard from '@/components/carCard/CarCard'
 import MainCarCard from '@/components/mainCarCard/MainCarCard'
-import SetCarLocation from '@/components/setCarLocation/SetCarLocation'
+import SetCarLocationSection from '@/components/setCarLocationSection/SetCarLocationSection'
 import RentalBtn from '@/components/ui/RentalBtn'
 import { carsData } from '@/data/mainCars'
 import Link from 'next/link'
-import { TbArrowsDownUp } from 'react-icons/tb'
 
 const carsInfo = carsData
 
@@ -30,13 +29,7 @@ export default function Home() {
                     bgColor='#54a6ff'
                 />
             </section>
-            <section className='flex items-center max-lg:flex-col max-lg:gap-4'>
-                <SetCarLocation title='Забрати:' bgDotColors='#3563E9' />
-                <button className='mx-11 w-fit h-fit p-[22px] bg-primary rounded-md shrink-0 cursor-pointer transition-opacity duration-300 hover:opacity-80'>
-                    <TbArrowsDownUp size={18} color='white' />
-                </button>
-                <SetCarLocation title='Залишити:' bgDotColors='#54A6FF' />
-            </section>
+            <SetCarLocationSection />
             <section className='pb-[57px]'>
                 <div className='pt-12  px-5 w-full flex justify-between'>
                     <p className='text-text-secondary-light font-semibold'>

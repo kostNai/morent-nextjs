@@ -23,7 +23,7 @@ export default function CarCard({
     discount,
 }: Props) {
     return (
-        <article className='flex-[23%] min-w-60 bg-white p-6 rounded-xl max-sm:p-4'>
+        <article className='flex-[23%] min-w-60 max-w-[375px] bg-white p-6 rounded-xl max-sm:p-4'>
             <div>
                 <div className='flex justify-between items-start'>
                     <div className='flex flex-col gap-1'>
