@@ -12,7 +12,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
     return (
-        <header className='relative w-full pl-15 pr-8 py-10 flex justify-between gap-4 max-lg:px-6 max-sm:pb-24'>
+        <header className='relative w-full pl-15 pr-8 py-10 flex justify-between gap-4 max-lg:px-6 max-sm:pb-24 border border-border-secondary border-solid'>
             <div>
                 <Link
                     href='/'
@@ -34,7 +34,7 @@ export default function Header() {
                     />
                 </div>
             </div>
-            <div className='flex items-center gap-5 shrink-0'>
+            <div className=' flex items-center  justify-end shrink-0'>
                 <Link
                     href='/'
                     className='flex items-center justify-center rounded-full p-3 border-2 border-solid border-gray-200 cursor-pointer transition-colors duration-300 hover:bg-gray-200 max-lg:hidden'
@@ -43,7 +43,7 @@ export default function Header() {
                 </Link>
                 <Link
                     href='/'
-                    className='relative flex items-center justify-center rounded-full p-3 border-2 border-solid border-gray-200 cursor-pointer transition-colors duration-300 hover:bg-gray-200 max-lg:hidden'
+                    className='relative flex items-center justify-center rounded-full mx-5 p-3 border-2 border-solid border-gray-200 cursor-pointer transition-colors duration-300 hover:bg-gray-200 max-lg:hidden'
                 >
                     <Image
                         src={Heart}
@@ -55,7 +55,7 @@ export default function Header() {
                 </Link>
                 <Link
                     href='/'
-                    className='flex items-center justify-center rounded-full p-3 border-2 border-solid border-gray-200 cursor-pointer transition-colors duration-300 hover:bg-gray-200 max-lg:hidden'
+                    className='flex items-center justify-center rounded-full p-3 mr-5 border-2 border-solid border-gray-200 cursor-pointer transition-colors duration-300 hover:bg-gray-200 max-lg:hidden'
                 >
                     <Image
                         src={Settings}

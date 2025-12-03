@@ -20,6 +20,7 @@
     --color-text-secondary: #1a202c;
     --color-text-secondary-light: #90a3bf;
     --color-text-footer-secondary: #131313;
+    --color-border-secondary: #e7eef6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,4 +34,12 @@ body {
     background: var(--background);
     color: var(--foreground);
     font-family: Arial, Helvetica, sans-serif;
+}
+@layer utilities {
+    input[type='range']::-webkit-slider-thumb {
+        @apply appearance-none w-4 h-4 bg-primary border-2 border-white border-solid rounded-full cursor-pointer transition-all duration-150 ease-out;
+    }
+    input[type='range']::-moz-range-thumb {
+        @apply w-4 h-4 bg-primary border-2 border-white border-solid rounded-full cursor-pointer transition-all duration-150 ease-out;
+    }
 }

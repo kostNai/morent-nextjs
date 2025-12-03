@@ -42,7 +42,7 @@ export default function Home() {
                     <p className='text-text-secondary-light font-semibold'>
                         Популярні авто
                     </p>
-                    <Link href='/' className='text-primary font-semibold'>
+                    <Link href='/cars' className='text-primary font-semibold'>
                         Дивитися всі
                     </Link>
                 </div>
