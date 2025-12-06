@@ -31,7 +31,6 @@ export default function CarImages() {
             <div className='mt-6'>
                 <CarsSlider
                     images={images}
-                    currentImage={currentImage}
                     setCurrrentImage={setCurrrentImage}
                 />
             </div>

@@ -9,16 +9,15 @@ import { useEffect, useState } from 'react'
 
 type Props = {
     images: string[]
-    currentImage: string
     setCurrrentImage: (image: string) => void
 }
 
-export function CarsSlider({ images, currentImage, setCurrrentImage }: Props) {
+export function CarsSlider({ images, setCurrrentImage }: Props) {
     const [activeImage, setActiveImage] = useState<string>(images[0])
 
     useEffect(() => {
         setCurrrentImage(activeImage)
-    }, [images, activeImage])
+    }, [images, activeImage, setCurrrentImage])
     return (
         <Carousel
             opts={{

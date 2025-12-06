@@ -20,7 +20,7 @@ export default function CheckBox({
             <input
                 type='checkbox'
                 name={name}
-                className='relative peer appearance-none w-5 h-5 border border-gray-400 rounded-md checked:bg-primary checked:border-primary focus:outline-none'
+                className='relative peer appearance-none w-5 h-5 border border-gray-400 rounded-sm checked:bg-primary checked:border-primary focus:outline-none'
                 checked={checked}
                 onChange={() => onChange(value)}
             />
