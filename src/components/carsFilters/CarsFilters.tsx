@@ -25,7 +25,7 @@ export default function CarsFilters() {
     const percent = ((priceFilter - min) / (max - min)) * 100
 
     return (
-        <aside className='bg-white px-8 pt-8 w-1/4'>
+        <aside className='bg-white px-8 pt-8 w-1/4 shrink-0'>
             <div>
                 <h4 className='text-text-secondary-light uppercase font-semibold tracking-widest text-xs'>
                     тип

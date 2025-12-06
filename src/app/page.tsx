@@ -48,7 +48,8 @@ export default function Home() {
                         controlType='Ручне'
                         capacity='2'
                         price={100}
-                        discount={20}
+                        // discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -59,6 +60,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -69,6 +71,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -79,6 +82,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                 </div>
                 <div className='pt-12  pl-5'>
@@ -96,6 +100,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -106,6 +111,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -116,6 +122,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                     <CarCard
                         title='Nissan GT - R'
@@ -126,6 +133,7 @@ export default function Home() {
                         capacity='2'
                         price={100}
                         discount={20}
+                        id='1'
                     />
                 </div>
                 <div className='mt-[74px] w-full flex justify-center'>

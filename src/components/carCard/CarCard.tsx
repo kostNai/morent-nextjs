@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import RentalBtn from '../ui/RentalBtn'
+import { useRouter } from 'next/navigation'
 
 type Props = {
     title: string
@@ -10,6 +12,7 @@ type Props = {
     capacity: string
     price: number
     discount?: number
+    id: string
 }
 
 export default function CarCard({
@@ -21,9 +24,15 @@ export default function CarCard({
     capacity,
     price,
     discount,
+    id,
 }: Props) {
+    const router = useRouter()
+
     return (
-        <article className='flex-[23%] min-w-60 max-w-[375px] bg-white p-6 rounded-xl max-sm:p-4'>
+        <article
+            className='flex-[23%] min-w-60 max-w-[375px] bg-white p-6 rounded-xl max-sm:p-4 cursor-pointer transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary'
+            onClick={() => router.push(`/cars/${id}`)}
+        >
             <div>
                 <div className='flex justify-between items-start'>
                     <div className='flex flex-col gap-1'>
@@ -82,22 +91,29 @@ export default function CarCard({
                     </ul>
                 </div>
             </div>
-            <div className='flex gap-4 justify-between mt-6'>
-                <div className='flex flex-col gap-1'>
-                    {discount && (
-                        <p className='text-xl font-semibold max-sm:text-xs'>
-                            &#8372;{price - (price * discount) / 100}/
-                            <span className='text-text-secondary-light '>
-                                день
-                            </span>
-                        </p>
-                    )}
-                    {discount && (
-                        <p className='text-text-secondary-light fonst-bold line-through'>
-                            &#8372;{price}
-                        </p>
-                    )}
-                </div>
+            <div className='flex gap-4 justify-between items-center mt-6'>
+                {discount ? (
+                    <div className='flex flex-col gap-1'>
+                        {discount && (
+                            <p className='text-xl font-semibold max-sm:text-xs'>
+                                &#8372;{price - (price * discount) / 100}/
+                                <span className='text-text-secondary-light '>
+                                    день
+                                </span>
+                            </p>
+                        )}
+                        {discount && (
+                            <p className='text-text-secondary-light fonst-bold line-through'>
+                                &#8372;{price}
+                            </p>
+                        )}
+                    </div>
+                ) : (
+                    <p className='text-xl font-semibold max-sm:text-xs'>
+                        &#8372;{price}/
+                        <span className='text-text-secondary-light '>день</span>
+                    </p>
+                )}
                 <RentalBtn title='Орендувати' />
             </div>
         </article>
